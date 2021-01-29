@@ -8,122 +8,143 @@ body {
   box-sizing: border-box;
 }
 
+:root {
+  --body-bg: #1e1e1e;
+  --body-color: #e1e1e1;
+  --card-bg: #3d3d3d;
+  --card-border: #c0c0c0;
+  --fire: #e4604d;
+  --grass: #9dd465;
+  --electric: #f9e44f;
+  --water: #6a83b6;
+  --ground: #e4c967;
+  --rock: #cabb7b;
+  --fairy: #eeb2fa;
+  --poison: #9f619d;
+  --bug: #c5cf4a;
+  --dragon: #857af7;
+  --psychic: #e56eaf;
+  --flying: #80a4f9;
+  --fighting: #9b5a48;
+  --normal: #bab8ab;
+}
+
 body {
-  background-color: #1e1e1e;
-  color: #e1e1e1;
+  background-color: var(--body-bg);
+  color: var(--body-color);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .bg.fire {
-  background: linear-gradient(to top right, #e4604d, #3d3d3d 25%)
+  background: linear-gradient(to top right, var(--fire), var(--card-bg) 25%)
 }
 
 .fire {
-  background-color: #e4604d;
+  background-color: var(--fire);
 }
 
 .bg.grass {
-  background: linear-gradient(to top right, #9dd465, #3d3d3d 25%)
+  background: linear-gradient(to top right, var(--grass), var(--card-bg) 25%)
 }
 
 .grass {
-  background-color: #9dd465;
+  background-color: var(--grass);
 }
 
 .bg.electric {
-  background: linear-gradient(to top right, #f9e44f, #3d3d3d 25%)
+  background: linear-gradient(to top right, var(--electric), var(--card-bg) 25%)
 }
 
 .electric {
-  background-color: #f9e44f;
+  background-color: var(--electric);
 }
 
 .bg.water {
-  background: linear-gradient(to top right, #6a83b6, #3d3d3d 25%)
+  background: linear-gradient(to top right, var(--water), var(--card-bg) 25%)
 }
 
 .water {
-  background-color: #6a83b6;
+  background-color: var(--water);
 }
 
 .bg.ground {
-  background: linear-gradient(to top right, #e4c967, #3d3d3d 25%)
+  background: linear-gradient(to top right, var(--ground), var(--card-bg) 25%)
 }
 
 .ground {
-  background-color: #e4c967;
+  background-color: var(--ground);
 }
 
 .bg.rock {
-  background: linear-gradient(to top right, #cabb7b, #3d3d3d 25%)
+  background: linear-gradient(to top right, var(--rock), var(--card-bg) 25%)
 }
 
 .rock {
-  background-color: #cabb7b;
+  background-color: var(--rock);
 }
 
 .bg.fairy {
-  background: linear-gradient(to top right, #eeb2fa, #3d3d3d 25%)
+  background: linear-gradient(to top right, var(--fairy), var(--card-bg) 25%)
 }
 
 .fairy {
-  background-color: #eeb2fa;
+  background-color: var(--fairy);
 }
 
 .bg.poison {
-  background: linear-gradient(to top right, #9f619d, #3d3d3d 25%)
+  background: linear-gradient(to top right, var(--poison), var(--card-bg) 25%)
 }
 
 .poison {
-  background-color: #9f619d;
+  background-color: var(--poison);
 }
 
 .bg.bug {
-  background: linear-gradient(to top right, #c5cf4a, #3d3d3d 25%)
+  background: linear-gradient(to top right, var(--bug), var(--card-bg) 25%)
 }
 
 .bug {
-  background-color: #c5cf4a;
+  background-color: var(--bug);
 }
 
 .bg.dragon {
-  background: linear-gradient(to top right, #857af7, #3d3d3d 25%)
+  background: linear-gradient(to top right, var(--dragon), var(--card-bg) 25%)
 }
 
 .dragon {
-  background-color: #857af7;
+  background-color: var(--dragon);
 }
 
 .bg.psychic {
-  background: linear-gradient(to top right, #e56eaf, #3d3d3d 25%)
+  background: linear-gradient(to top right, var(--psychic), var(--card-bg) 25%)
 }
 
 .psychic {
-  background-color: #e56eaf;
+  background-color: var(--psychic);
 }
 
 .bg.flying {
-  background: linear-gradient(to top right, #80a4f9, #3d3d3d 25%)
+  background: linear-gradient(to top right, var(--flying), var(--card-bg) 25%)
 }
 
 .flying {
-  background-color: #80a4f9;
+  background-color: var(--flying);
 }
 
 .bg.fighting {
-  background: linear-gradient(to top right, #9b5a48, #3d3d3d 25%)
+  background: linear-gradient(to top right, var(--fighting), var(--card-bg) 25%)
 }
 
 .fighting {
-  background-color: #9b5a48;
+  background-color: var(--fighting);
 }
 
 .bg.normal {
-  background: linear-gradient(to top right, #bab8ab, #3d3d3d 25%)
+  background: linear-gradient(to top right, var(--normal), var(--card-bg) 25%)
 }
 
 .normal {
-  background-color: #bab8ab;
+  background-color: var(--normal);
 }
 
 .container {
@@ -147,8 +168,8 @@ body {
   padding: 20px;
   color: rgb(173, 172, 172);
   border-radius: 10px;
-  background-color: #3d3d3d;
-  border: 1px solid silver;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
 }
 
 .card:hover {
@@ -200,7 +221,7 @@ body {
 }
 
 .card .type {
-  color: #1e1e1e;
+  color: var(--body-bg);
   background-repeat: 10px;
   padding: 10px;
   text-transform: uppercase;
